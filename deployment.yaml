@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: quarkus-deployment
-  namespace: cicd-quarkus
+  namespace: cicd-project
 spec:
   replicas: 3
   selector:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: container
-          image: 'image-registry.openshift-image-registry.svc:5000/cicd-quarkus/quarkus-app'
+          image: 'image-registry.openshift-image-registry.svc:5000/cicd-project/cicd-image'
           ports:
             - containerPort: 8080
               protocol: TCP
