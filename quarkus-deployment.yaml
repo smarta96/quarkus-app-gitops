@@ -18,7 +18,7 @@ spec:
         - name: container
           image: 'image-registry.openshift-image-registry.svc:5000/cicd-project/quarkus-image'
           ports:
-            - containerPort: 8080
+            - containerPort: 8001
               protocol: TCP
           resources: {}
           terminationMessagePath: /dev/termination-log
