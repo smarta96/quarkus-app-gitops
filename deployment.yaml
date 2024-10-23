@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: container
-          image: 'image-registry.openshift-image-registry.svc:5000/cicd-project/cicd-image'
+          image: 'image-registry.openshift-image-registry.svc:5000/cicd-project/quarkus-image'
           ports:
             - containerPort: 8080
               protocol: TCP
